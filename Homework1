@@ -1,0 +1,16 @@
+import java.util.Scanner;//패키지랑 클래스를 import
+
+public class Homework1 {
+    public static void main(String[] args){
+        int i;
+        int sum = 0;
+
+        for(i=0;i<5;i++){
+            Scanner sc = new Scanner(System.in);//Scanner객체 생성
+            System.out.printf("정수를 입력하세요: ");
+            int num = sc.nextInt();//사용자가 입력하는 정수 받아서 num에 저장
+            sum += num;
+            System.out.printf("현재까지 입력된 정수의 합은 %d입니다.\n", sum);
+        }
+    }
+}
